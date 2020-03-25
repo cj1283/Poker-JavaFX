@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poker1.PokerController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label fx:id="rank" layoutX="50.0" layoutY="13.0" prefHeight="89.0" prefWidth="135.0" text="Rank:                         Ace=1, Jack= 11, Queen=12, King=13" textOverrun="CLIP" wrapText="true" />
+            <Label fx:id="suit" layoutX="254.0" layoutY="17.0" maxHeight="400.0" maxWidth="400.0" minHeight="40.0" minWidth="77.0" prefHeight="75.0" prefWidth="111.0" text="Suit: Diamonds=D, Hearts=H, Clubs=C, Spades=S" wrapText="true" />
+            <Label layoutX="51.0" layoutY="104.0" text="Card #1" />
+            <Label layoutX="50.0" layoutY="135.0" text="Card #2" />
+            <Label layoutX="50.0" layoutY="165.0" text="Card #3" />
+            <Label layoutX="50.0" layoutY="196.0" text="Card #4" />
+            <Label layoutX="50.0" layoutY="226.0" text="Card #5" />
+            <TextField fx:id="cardNum1" layoutX="109.0" layoutY="99.0" prefHeight="27.0" prefWidth="101.0" />
+            <TextField fx:id="cardNum2" layoutX="109.0" layoutY="130.0" prefHeight="27.0" prefWidth="101.0" />
+            <TextField fx:id="cardNum3" layoutX="109.0" layoutY="160.0" prefHeight="27.0" prefWidth="101.0" />
+            <TextField fx:id="cardNum4" layoutX="109.0" layoutY="191.0" prefHeight="27.0" prefWidth="101.0" />
+            <TextField fx:id="cardNum5" layoutX="109.0" layoutY="221.0" prefHeight="27.0" prefWidth="101.0" />
+            <TextField fx:id="suit1" layoutX="251.0" layoutY="99.0" prefHeight="27.0" prefWidth="101.0" />
+            <TextField fx:id="suit2" layoutX="251.0" layoutY="130.0" prefHeight="27.0" prefWidth="101.0" />
+            <TextField fx:id="suit3" layoutX="251.0" layoutY="160.0" prefHeight="27.0" prefWidth="101.0" />
+            <TextField fx:id="suit4" layoutX="251.0" layoutY="191.0" prefHeight="27.0" prefWidth="101.0" />
+            <TextField fx:id="suit5" layoutX="251.0" layoutY="221.0" prefHeight="27.0" prefWidth="101.0" />
+            <Button fx:id="btn" layoutX="135.0" layoutY="317.0" mnemonicParsing="false" onAction="#displayHand" text="Display Type of Hand" />
+            <Label fx:id="labelResult" alignment="CENTER" layoutX="24.0" layoutY="357.0" prefHeight="17.0" prefWidth="356.0" style="-fx-background-color: white; -fx-text-alignment: center;" textAlignment="CENTER" wrapText="true" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
